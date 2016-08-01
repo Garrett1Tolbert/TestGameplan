@@ -20,7 +20,8 @@
         android:id="@+id/tvUsername"
         android:textColor="#163E11"
         android:layout_marginTop="15dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <EditText
         android:layout_width="match_parent"
@@ -36,7 +37,8 @@
         android:id="@+id/tvEmail"
         android:textColor="#163E11"
         android:paddingTop="15dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <EditText
         android:layout_width="match_parent"
@@ -54,7 +56,8 @@
         android:id="@+id/tvPassword"
         android:textColor="#163E11"
         android:paddingTop="15dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <EditText
         android:layout_width="match_parent"
@@ -72,7 +75,8 @@
         android:id="@+id/tvConfirmPassword"
         android:layout_marginTop="15dp"
         android:textColor="#163E11"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <EditText
         android:layout_width="match_parent"
@@ -84,12 +88,13 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:id="@+id/SignUpButton"
+        android:text="Register"
+        android:id="@+id/RegisterButton"
         android:background="#ffffff"
         android:layout_marginTop="15dp"
         android:textStyle="bold"
         android:textColor="#163E11"
-        android:onClick="onSignUpClick" />
+        android:onClick="onRegisterClick"
+        android:typeface="serif" />
 
 </LinearLayout>
