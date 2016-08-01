@@ -13,17 +13,17 @@ import java.util.logging.Logger;
 
 public class RegisterActivity extends Activity {
 
-    Button SignupButton;
+    Button RegisterButton;
     DBHelper helper = new DBHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        SignupButton = (Button) findViewById(R.id.SignUpButton);
+        RegisterButton = (Button) findViewById(R.id.RegisterButton);
     }
 
-    public void onSignUpClick(View v) {
+    public void onRegisterClick(View v) {
         EditText username = (EditText) findViewById(R.id.etUserName);
         EditText email = (EditText) findViewById(R.id.etEmail);
         EditText password = (EditText) findViewById(R.id.etPassword);
@@ -52,10 +52,13 @@ public class RegisterActivity extends Activity {
 
             Logger.getLogger(getClass().getName()).log(Level.WARNING, "Run Successful1");
 
+            Toast pass = Toast.makeText(RegisterActivity.this, "Registration Complete!", Toast.LENGTH_SHORT);
+            pass.show();
 
             //go to LoginActivity
             Intent PressIntent = new Intent(RegisterActivity.this, LoginActivity.class);
             RegisterActivity.this.startActivity(PressIntent);
+
         }
     }
 }
